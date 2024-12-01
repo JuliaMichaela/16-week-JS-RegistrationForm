@@ -8,12 +8,49 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <input type="text" placeholder required>
-        <input type="email" placeholder required>
-        <input type="number" placeholder required>
-    </form>
-    <input type="text">
+    <div class="registratiov-form">
+        <h2>Регистрация</h2>
+        <form name="register">
+            <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Введите имя" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Почта</label>
+                <input type="email" id="email" name="email" placeholder="Введите почту" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Возраст</label>
+                <input type="number" id="age" name="age" placeholder="Введите возраст" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Пол</label>
+                <select name="gender" id="gender" required>
+                    <option value="" disabled selected>Укажите ваш пол</option>
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="profession">Профессия</label>
+                <select name="profession" id="profession" required>
+                    <option value="" disabled selected>Укажите вашу профессию</option>
+                    <option value="doctor">Врач</option>
+                    <option value="programmer">Программист</option>
+                    <option value="teacher">Учитель</option>
+                    <option value="designer">Дизайнер</option>
+                    <option value="engineer">Инженер</option>
+                    <option value="salesman">Продавец</option>
+                    <option value="other">Другое</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password"  minlength="8" pattern="" placeholder="Введите пароль" required>
+            </div>
+            <button type="submit" class="btn-submit">Зарегистрироваться</button>
+        </form>
+    </div>
     <script src="./assets/scripts/app.js"></script>
 </body>
 </html>
