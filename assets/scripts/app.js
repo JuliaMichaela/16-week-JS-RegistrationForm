@@ -1,0 +1,1 @@
+const formRegister = document.forms.register;
