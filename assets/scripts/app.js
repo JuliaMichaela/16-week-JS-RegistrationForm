@@ -10,4 +10,7 @@ const passwordInput = formRegister.elements.password;
 formRegister.addEventListener("submit", (e)=>{
     e.preventDefaunt();
 })
-function vali
+function validateName(input) {
+    const correctInputValue = input.value.trim();
+    const namePattern = 
+}
